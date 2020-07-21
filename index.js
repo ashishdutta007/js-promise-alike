@@ -1,6 +1,7 @@
-// Import stylesheets
-import './style.css';
+class PromiseAlike {
+  constructor(computation) {}
+}
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+const promise = new PromiseAlike((resolve, reject) => {
+  setTimeout(() => resolve(), 1000);
+});
